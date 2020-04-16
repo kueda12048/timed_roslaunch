@@ -4,5 +4,14 @@
     <arg name="pkg" value="timed_roslaunch" />
     <arg name="file" value="runtest.launch" />
     <arg name="value" value="arg1:=1.2" />
+    <arg name="output" value="screen" />
+  </include>
+
+  <include file="$(find timed_roslaunch)/launch/timed_rosrun.launch">
+    <arg name="time" value="8" />
+    <arg name="pkg" value="timed_roslaunch" />
+    <arg name="file" value="test.py" />
+    <arg name="value" value="arg1:=2.4" />
+    <arg name="output" value="screen" />
   </include>
 </launch>
